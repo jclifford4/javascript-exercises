@@ -7,19 +7,30 @@ const subtract = function(x, y) {
 };
 
 const sum = function(array) {
-	return array[0] + array[1];
+	return array.reduce((a, b) => a + b, 0);
 };
 
-const multiply = function() {
-
+const multiply = function(array) {
+  return array.reduce((a, b) => a * b, 1);
 };
 
-const power = function() {
+const power = function(a, b) {
+	return a ** b;
+};
+
+const factorial = function(a) {
 	
-};
+  if (a === 0) {
+    return 1;
+  }
 
-const factorial = function() {
-	
+  let result = 1;
+  for (let i = 1; i <= a; i++) {
+    result *= i;
+  } 
+  return result;
+
+  
 };
 
 // Do not edit below this line
